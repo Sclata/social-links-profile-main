@@ -57,13 +57,17 @@ input {
   border-style: none;
   font-size: 0.875em;
   font-weight: 700;
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-out;
 }
 
 .link-list__button:hover,
 .link-list__button:focus {
   background-color: #C4F82A;
   color: #1F1F1F;
+}
+
+.link-list__button:not(:hover) {
+  transition-duration: 1.5s;
 }
 
 .profile {
@@ -145,6 +149,11 @@ body {
 .wrapper {
   background-color: #1F1F1F;
   border-radius: 12px;
+}
+
+.attribution a {
+  text-decoration: underline;
+  color: #C4F82A;
 }
 
 /*# sourceMappingURL=index.css.map */

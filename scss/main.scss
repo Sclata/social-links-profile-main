@@ -23,3 +23,8 @@ body {
     background-color: colors.$medium-grey;
     border-radius: 12px;
 }
+
+.attribution a {
+    text-decoration: underline;
+    color: colors.$bright-green;
+}

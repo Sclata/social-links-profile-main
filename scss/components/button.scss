@@ -9,11 +9,15 @@
     border-style: none;
     font-size: 0.875em;
     font-weight: 700;
-    transition: all 0.5s ease-in;
+    transition: all 0.5s ease-out;
 }
 
 .link-list__button:hover,
 .link-list__button:focus{
     background-color: colors.$bright-green;
     color: colors.$medium-grey;
+}
+
+.link-list__button:not(:hover){
+    transition-duration: 1.5s;
 }
