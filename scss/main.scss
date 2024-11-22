@@ -1,0 +1,25 @@
+@use "base/reset";
+
+@use "abstraction/breakpoints";
+@use "abstraction/colors";
+@use "abstraction/typography";
+
+@use "components/button";
+@use "components/profile.scss";
+
+@use "layout/general";
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: "INTER";
+    line-height: 150%;
+    text-align: center;
+}
+
+.wrapper {
+    background-color: colors.$medium-grey;
+    border-radius: 12px;
+}

@@ -1,0 +1,19 @@
+@use "../abstraction/colors";
+
+.link-list__button {
+    width: 100%;
+    background-color: colors.$light-grey;
+    color: colors.$bright-white;
+    border-radius: 0.5rem;
+    height: 45px;
+    border-style: none;
+    font-size: 0.875em;
+    font-weight: 700;
+    transition: all 0.5s ease-in;
+}
+
+.link-list__button:hover,
+.link-list__button:focus{
+    background-color: colors.$bright-green;
+    color: colors.$medium-grey;
+}

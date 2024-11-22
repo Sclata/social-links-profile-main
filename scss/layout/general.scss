@@ -1,0 +1,35 @@
+@use "../abstraction/breakpoints";
+@use "../abstraction/colors";
+
+@media (width > breakpoints.$bp_mobile) {
+    .wrapper {
+        padding: 2.5rem;
+    }
+}
+
+@media (width <= breakpoints.$bp_mobile) {
+    .wrapper {
+        padding: 1.5rem;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+body {
+    background-color: colors.$dark-grey;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
